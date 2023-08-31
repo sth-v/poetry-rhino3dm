@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "poetry-rhino3dm-minimal"
+version = "0.1.0"
+description = "Demo for the minimal python environment with rhino3dm. Yeah, that's often a problem on this is often a problem on many unix distributions.."
+authors = ["sth-v <aa@contextmachine.online>"]
+readme = "README.md"
+license = "Apache-2.0"
+
+[tool.poetry.dependencies]
+python=">=3.9,<3.12"
+cmake="*"
+cffi = "*"
+rhino3dm={git="https://github.com/mcneel/rhino3dm.git", rev="d7aa33e"} #
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
